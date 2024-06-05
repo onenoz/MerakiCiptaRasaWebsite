@@ -211,17 +211,6 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     margin-bottom: 0rem;
-    background:
-        url(../img/blop-top-left.png);
-
-    background-position:
-        left 0px top 0px,
-        right 0px top 0px,
-        left 0px bottom 0px,
-        right 0px bottom 0px,
-        center center,
-        center bottom;
-    background-repeat: no-repeat;
 }
 
 @media (max-width: 991.98px) {
