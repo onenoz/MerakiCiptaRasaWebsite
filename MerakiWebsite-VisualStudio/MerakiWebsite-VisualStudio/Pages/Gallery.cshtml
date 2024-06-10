@@ -1,0 +1,72 @@
+﻿@page
+@model MerakiWebsite_VisualStudio.Pages.GalleryModel
+@{
+    ViewData["Title"] = "Gallery";
+    Layout = "_LayoutBerita";
+}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+    <div class="col-md-12 col-xl-11 ms-5 row-gap-2">
+        <p class="section-title text-white h5 mb-4">Gallery<span></span></p>
+        <div class="row g-2">
+            <div class="col-4">
+                <img class="img-fluid" src="img/galeri1.png" alt="Image">
+            </div>
+            <div class="col-4">
+                <img class="img-fluid" src="img/galeri2.png" alt="Image">
+            </div>
+            <div class="col-4">
+                <img class="img-fluid" src="img/galeri3.png" alt="Image">
+            </div>
+            <div class="col-4">
+                <img class="img-fluid" src="img/galeri4.png" alt="Image">
+            </div>
+            <div class="col-4">
+                <img class="img-fluid" src="img/galeri5.png" alt="Image">
+            </div>
+            <div class="col-4" style="h-100;">
+                <img class="img-fluid" src="img/galeri6.png" alt="Image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
