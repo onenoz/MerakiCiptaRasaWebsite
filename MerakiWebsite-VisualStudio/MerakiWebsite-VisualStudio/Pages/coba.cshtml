@@ -1,0 +1,305 @@
+﻿@page
+@model MerakiWebsite_VisualStudio.Pages.cobaModel
+@{
+    ViewData["Title"] = "Coba";
+    Layout = "_LayoutB";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Meraki Cipta Rasa</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="~/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="~/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="~/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="~/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="img/logomeraki.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Beranda</a>
+                        <a href="company.html" class="nav-item nav-link">Perusahaan</a>
+                        <a href="merek.html" class="nav-item nav-link active">Merek</a>
+                        <a href="contact.html" class="nav-item nav-link">Kontak</a>
+                        <div class="col-sm-1 col-md-auto align-self-center align-items-end justify-content-end p-1">
+                            <button class="btn btn-social btn-sm btn bg-transparent">
+                                <img class="img-fluid" src="img/bendera indo.jpg" style="max-width: 20px; max-height: 25px;">
+                            </button>
+                        </div>
+                        <div class="col-sm-1 col-md-auto align-self-center align-items-end justify-content-end p-1">
+                            <button class="btn btn-social btn-sm btn bg-transparent">
+                                <img class="img-fluid" src="img/bendera inggris.jpg" style="max-width: 20px; max-height: 25px;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-xxl py-5 bg-primary hero-header">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-lg-6 text-center ">
+                            <img class="img-fluid animated zoomIn" src="img/wizz_sausage.png" alt="">
+                        </div>
+                        <div class="col-lg-6 text-center ">
+                            <h1 class="text-white mb-4 slideInDown">Wizz Sausage</h1>
+                            <nav caria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item text-white"><a class="breadcrumb-item" href="merek.html">Merek</li></a>
+                                    <li class="breadcrumb-item text-white"><a class="breadcrumb-item active" href="deks-merek-wizzsausage.html">Wizz Sausage</li></a>
+                                </ol>
+                            </nav>
+                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                            <p class="text-white animated slideInDown">Deksripsi singkat merek</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+        <!-- Project Start -->
+        <!--Detail Product-->
+        <div class="container-dekspro">
+            <div class="row base-dekripsi detail" id="01">
+                <div class="base col-md-4">
+                    <div class="base-body align-items-center">
+                        <img class="img-fluid" src="img/wizz_sausage_original.jpg">
+                    </div>
+                </div>
+                <div class="base col-md-8 dekripsi-konten">
+                    <h3 class="text-white text-capitalize">Wizz Sausage - Original</h3>
+                    <div class="content">
+                        Sosis ayam premium yang diproduksi dari bahan baku segar pilihan serta diolah secara higienis tanpa pengawet, pewarna buatan, dan MSG sehingga mengasilkan makanan yang praktis, halal, sehat, dan nikmat dengan citarasa mewah.
+                    </div>
+                    <div class="content">Berat: 250 gr</div>
+                </div>
+            </div>
+            <div class="row base-dekripsi detail" id="02">
+                <div class="base col-md-4">
+                    <div class="base-body align-items-center">
+                        <img class="img-fluid" src="img/wizz_sausage_cheese.jpg">
+                    </div>
+                </div>
+                <div class="base col-md-8 dekripsi-konten">
+                    <h3 class="text-white text-capitalize">Wizz Sausage - Cheese</h3>
+                    <div class="content">
+                        Sosis ayam premium yang diproduksi dari bahan baku segar pilihan serta diolah secara higienis tanpa pengawet, pewarna buatan, dan MSG sehingga mengasilkan makanan yang praktis, halal, sehat, dan nikmat dengan citarasa mewah.
+                    </div>
+                    <div class="content">Berat: 250 gr</div>
+                </div>
+            </div>
+            <div class="row base-dekripsi detail" id="03">
+                <div class="base col-md-4">
+                    <div class="base-body align-items-center">
+                        <img class="img-fluid" src="img/wizz_sausage_blackpepper.jpg">
+                    </div>
+                </div>
+                <div class="base col-md-8 dekripsi-konten">
+                    <h3 class="text-white text-capitalize">Wizz Sausage - Blackpepper</h3>
+                    <div class="content">
+                        Sosis ayam premium yang diproduksi dari bahan baku segar pilihan serta diolah secara higienis tanpa pengawet, pewarna buatan, dan MSG sehingga mengasilkan makanan yang praktis, halal, sehat, dan nikmat dengan citarasa mewah.
+                    </div>
+                    <div class="content">Berat: 250 gr</div>
+                </div>
+            </div>
+            <div class="row base-dekripsi detail" id="04">
+                <div class="base col-md-4">
+                    <div class="base-body align-items-center">
+                        <img class="img-fluid" src="img/wizz_sausage_basil.jpg">
+                    </div>
+                </div>
+                <div class="base col-md-8 dekripsi-konten">
+                    <h3 class="text-white text-capitalize">Wizz Sausage - Basil</h3>
+                    <div class="content">
+                        Sosis ayam premium yang diproduksi dari bahan baku segar pilihan serta diolah secara higienis tanpa pengawet, pewarna buatan, dan MSG sehingga mengasilkan makanan yang praktis, halal, sehat, dan nikmat dengan citarasa mewah.
+                    </div>
+                    <div class="content">Berat: 250 gr</div>
+                </div>
+            </div>
+        </div>
+        <!--Detail Product-->
+        <!--Produk Item-->
+        <div class="container-xxl py-5">
+            <div class="row">
+                <div class="col-md-6  mb-3 mt-5 pl-5">
+                    <a>Temukan Produk di</a>
+                    <ul class="btn-social">
+                        <li>
+                            <a href="#"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNmNDUxMWUiIGQ9Ik0zNi42ODMsNDNIMTEuMzE3Yy0yLjEzNiwwLTMuODk2LTEuNjc5LTMuOTk2LTMuODEzbC0xLjI3Mi0yNy4xNEM2LjAyMiwxMS40NzcsNi40NzcsMTEsNy4wNDgsMTEgaDMzLjkwNGMwLjU3MSwwLDEuMDI2LDAuNDc3LDAuOTk5LDEuMDQ3bC0xLjI3MiwyNy4xNEM0MC41NzksNDEuMzIxLDM4LjgxOSw0MywzNi42ODMsNDN6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2Y0NTExZSIgZD0iTTMyLjUsMTEuNWgtMkMzMC41LDcuMzY0LDI3LjU4NCw0LDI0LDRzLTYuNSwzLjM2NC02LjUsNy41aC0yQzE1LjUsNi4yNjIsMTkuMzEzLDIsMjQsMiBTMzIuNSw2LjI2MiwzMi41LDExLjV6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZhZmFmYSIgZD0iTTI0LjI0OCwyNS42ODhjLTIuNzQxLTEuMDAyLTQuNDA1LTEuNzQzLTQuNDA1LTMuNTc3YzAtMS44NTEsMS43NzYtMy4xOTUsNC4yMjQtMy4xOTUgYzEuNjg1LDAsMy4xNTksMC42NiwzLjg4OCwxLjA1MmMwLjEyNCwwLjA2NywwLjQ3NCwwLjI3NywwLjY3MiwwLjQxbDAuMTMsMC4wODdsMC45NTgtMS41NThsLTAuMTU3LTAuMTAzIGMtMC43NzItMC41MjEtMi44NTQtMS43MzMtNS40OS0xLjczM2MtMy40NTksMC02LjA2NywyLjE2Ni02LjA2Nyw1LjAzOWMwLDMuMjU3LDIuOTgzLDQuMzQ3LDUuNjE1LDUuMzA5IGMzLjA3LDEuMTIyLDQuOTM0LDEuOTc1LDQuOTM0LDQuMzQ5YzAsMS44MjgtMi4wNjcsMy4zMTQtNC42MDksMy4zMTRjLTIuODY0LDAtNS4zMjYtMi4xMDUtNS4zNDktMi4xMjVsLTAuMTI4LTAuMTE4bC0xLjA0NiwxLjU0MiBsMC4xMDYsMC4wODdjMC43MTIsMC41NzcsMy4yNzYsMi40NTgsNi40MTYsMi40NThjMy42MTksMCw2LjQ1NC0yLjI2Niw2LjQ1NC01LjE1OEMzMC4zOTMsMjcuOTMzLDI3LjEyOCwyNi43NDEsMjQuMjQ4LDI1LjY4OHoiPjwvcGF0aD4KPC9zdmc+" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxsaW5lYXJHcmFkaWVudCBpZD0iQkJ5enloUmcwOFN1ZW9IZW56am83YV9ReFRDVW9oYkJ3OVVfZ3IxIiB4MT0iMzIuMTM1IiB4Mj0iMzIuMTM1IiB5MT0iMS40NDUiIHkyPSI1MS4wNDMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM2ZGM3ZmYiPjwvc3RvcD48c3RvcCBvZmZzZXQ9Ii40OTIiIHN0b3AtY29sb3I9IiNhYWI5ZmYiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlNmFiZmYiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxwYXRoIGZpbGw9InVybCgjQkJ5enloUmcwOFN1ZW9IZW56am83YV9ReFRDVW9oYkJ3OVVfZ3IxKSIgZD0iTTU0LDEzLjZ2MjQuNTFjMCw4Ljc5LTcuMTIsMTUuOTEtMTUuOSwxNS45MUgxMC4yN1YxMy42aDEyLjU5YzIuOTMsMCw2LjYyLDEuOTksOS4yOCw0LjY0IGMyLjY1LTIuNjUsNi4zNC00LjY0LDkuMjctNC42NEg1NHoiPjwvcGF0aD48Y2lyY2xlIGN4PSIyMi44NTkiIGN5PSIzMC4xNjMiIHI9IjkuMjc2IiBmaWxsPSIjZmZmIj48L2NpcmNsZT48Y2lyY2xlIGN4PSI0MS40MTEiIGN5PSIzMC4xNjMiIHI9IjkuMjc2IiBmaWxsPSIjZmZmIj48L2NpcmNsZT48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNDQsNDguNDczYzAsMC43OTktMC4xMDksMi43OC0wLjI5OCwzLjUyN0gyMC41NjhjLTAuMTg5LTAuNzQ2LTAuMjk4LTIuNzI4LTAuMjk4LTMuNTI3IEMyMC4yNyw0Mi42ODgsMjUuNTgzLDM4LDMyLjE0LDM4QzM4LjY4NywzOCw0NCw0Mi42ODgsNDQsNDguNDczeiI+PC9wYXRoPjxsaW5lYXJHcmFkaWVudCBpZD0iQkJ5enloUmcwOFN1ZW9IZW56am83Yl9ReFRDVW9oYkJ3OVVfZ3IyIiB4MT0iMjMuNTIyIiB4Mj0iMjMuNTIyIiB5MT0iLTMuNDE4IiB5Mj0iNjMuODIyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWE2ZGZmIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzgyMmZmIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48Y2lyY2xlIGN4PSIyMy41MjIiIGN5PSIzMC44MjUiIHI9IjQuNjM4IiBmaWxsPSJ1cmwoI0JCeXp5aFJnMDhTdWVvSGVuempvN2JfUXhUQ1VvaGJCdzlVX2dyMikiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjIxLjIwMyIgY3k9IjI3LjE4MSIgcj0iMi45ODIiIGZpbGw9IiNmZmYiPjwvY2lyY2xlPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik00MS40MSwxNC42Yy0yLjUzLDAtNS45NywxLjc0LTguNTcsNC4zNGMtMC4xOSwwLjItMC40NSwwLjMtMC43LDAuM2MtMC4yNiwwLTAuNTItMC4xLTAuNzEtMC4zIGMtMi42LTIuNi02LjA0LTQuMzQtOC41Ny00LjM0SDExLjI3djM4LjQySDM4LjFjOC4yMSwwLDE0LjktNi42OSwxNC45LTE0LjkxVjE0LjZINDEuNDF6IE01MSwzOC4xMSBjMCw3LjEyLTUuNzksMTIuOTEtMTIuOSwxMi45MUgxMy4yN1YxNi42aDkuNTljMS42OSwwLDQuNjksMS4yOSw3LjE1LDMuNzZjMC41NywwLjU2LDEuMzIsMC44OCwyLjEzLDAuODggYzAuOCwwLDEuNTUtMC4zMiwyLjEyLTAuODhjMi40Ni0yLjQ3LDUuNDYtMy43Niw3LjE1LTMuNzZINTFWMzguMTF6Ij48L3BhdGg+PGxpbmVhckdyYWRpZW50IGlkPSJCQnl6eWhSZzA4U3Vlb0hlbnpqbzdjX1F4VENVb2hiQnc5VV9ncjMiIHgxPSIzMi4xMzUiIHgyPSIzMi4xMzUiIHkxPSItMy40MTgiIHkyPSI2My44MjIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxYTZkZmYiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNjODIyZmYiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxwYXRoIGZpbGw9InVybCgjQkJ5enloUmcwOFN1ZW9IZW56am83Y19ReFRDVW9oYkJ3OVVfZ3IzKSIgZD0iTTQxLjA2NywyMC4yMyBjLTMuOTI5LDAtNy4zMjIsMi4yOTktOC45MzIsNS42MTdjLTEuNjEtMy4zMTgtNS4wMDMtNS42MTctOC45MzMtNS42MTdjLTUuNDc3LDAtOS45MzIsNC40NTUtOS45MzIsOS45MzJzNC40NTYsOS45MzMsOS45MzIsOS45MzMgYzMuOTI5LDAsNy4zMjMtMi4yOTksOC45MzMtNS42MThjMS42MSwzLjMxOCw1LjAwMyw1LjYxOCw4LjkzMiw1LjYxOGM1LjQ3NywwLDkuOTMzLTQuNDU2LDkuOTMzLTkuOTMzUzQ2LjU0NCwyMC4yMyw0MS4wNjcsMjAuMjN6IE0yMy4yMDMsMzguMDk1Yy00LjM3NCwwLTcuOTMyLTMuNTU5LTcuOTMyLTcuOTMzYzAtNC4zNzMsMy41NTgtNy45MzIsNy45MzItNy45MzJzNy45MzMsMy41NTksNy45MzMsNy45MzIgQzMxLjEzNSwzNC41MzYsMjcuNTc3LDM4LjA5NSwyMy4yMDMsMzguMDk1eiBNNDEuMDY3LDM4LjA5NWMtNC4zNzQsMC03LjkzMi0zLjU1OS03LjkzMi03LjkzM2MwLTQuMzczLDMuNTU4LTcuOTMyLDcuOTMyLTcuOTMyIFM0OSwyNS43ODksNDksMzAuMTYyQzQ5LDM0LjUzNiw0NS40NDEsMzguMDk1LDQxLjA2NywzOC4wOTV6Ij48L3BhdGg+PGxpbmVhckdyYWRpZW50IGlkPSJCQnl6eWhSZzA4U3Vlb0hlbnpqbzdkX1F4VENVb2hiQnc5VV9ncjQiIHgxPSI0MC43NDkiIHgyPSI0MC43NDkiIHkxPSItMy40MTgiIHkyPSI2My44MjIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxYTZkZmYiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNjODIyZmYiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxjaXJjbGUgY3g9IjQwLjc0OSIgY3k9IjMwLjgyNSIgcj0iNC42MzgiIGZpbGw9InVybCgjQkJ5enloUmcwOFN1ZW9IZW56am83ZF9ReFRDVW9oYkJ3OVVfZ3I0KSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMzguNDMiIGN5PSIyNy4xODEiIHI9IjIuOTgyIiBmaWxsPSIjZmZmIj48L2NpcmNsZT48bGluZWFyR3JhZGllbnQgaWQ9IkJCeXp5aFJnMDhTdWVvSGVuempvN2VfUXhUQ1VvaGJCdzlVX2dyNSIgeDE9IjMxLjg1IiB4Mj0iMzEuODUiIHkxPSIzNy4xMSIgeTI9IjQzLjk4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNmRjN2ZmIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIuNDkyIiBzdG9wLWNvbG9yPSIjYWFiOWZmIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZTZhYmZmIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI0JCeXp5aFJnMDhTdWVvSGVuempvN2VfUXhUQ1VvaGJCdzlVX2dyNSkiIGQ9Ik0zNi41NywzOS4zbC00LjQzLDQuNDRsLTAuMjQsMC4yNCBsLTQuNzctNC43N2MxLjE0LTEuMjksMi44Mi0yLjEsNC42Ny0yLjFjMC4xMiwwLDAuMjIsMC4wMiwwLjM0LDAuMDJDMzMuOTEsMzcuMjIsMzUuNDgsMzguMDQsMzYuNTcsMzkuM3oiPjwvcGF0aD48bGluZWFyR3JhZGllbnQgaWQ9IkJCeXp5aFJnMDhTdWVvSGVuempvN2ZfUXhUQ1VvaGJCdzlVX2dyNiIgeDE9IjMxLjg0NiIgeDI9IjMxLjg0NiIgeTE9Ii00LjUzNSIgeTI9IjYyLjcwNiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFhNmRmZiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2M4MjJmZiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCNCQnl6eWhSZzA4U3Vlb0hlbnpqbzdmX1F4VENVb2hiQnc5VV9ncjYpIiBkPSJNMzEuOSw0NS4yNzhsLTYuMTQyLTYuMTQzbDAuNjIzLTAuNzA0IGMxLjM2OS0xLjU0OSwzLjM0NC0yLjQzOCw1LjQxOS0yLjQzOGMwLjA5MSwwLDAuMTc1LDAuMDA2LDAuMjU4LDAuMDE0bDAuMTMzLDAuMDA3YzEuOTk3LDAuMTAyLDMuODIsMC45OTQsNS4xMzUsMi41MTUgbDAuNjA4LDAuNzAzTDMxLjksNDUuMjc4eiBNMjguNTYyLDM5LjExMmwzLjMzNywzLjMzN2wzLjI1LTMuMjU4Yy0wLjg2NS0wLjcwOS0xLjkyNC0xLjEyMS0zLjA2MS0xLjE3OSBjLTAuMDM1LDAuMDA0LTAuMTIzLTAuMDA1LTAuMjA4LTAuMDEzYy0wLjAwNywwLTAuMDE1LDAtMC4wMjEsMEMzMC42MTksMzgsMjkuNDc0LDM4LjM5OCwyOC41NjIsMzkuMTEyeiI+PC9wYXRoPjxsaW5lYXJHcmFkaWVudCBpZD0iQkJ5enloUmcwOFN1ZW9IZW56am83Z19ReFRDVW9oYkJ3OVVfZ3I3IiB4MT0iMzIuMTM1IiB4Mj0iMzIuMTM1IiB5MT0iLTMuNDE4IiB5Mj0iNjMuODIyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWE2ZGZmIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzgyMmZmIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI0JCeXp5aFJnMDhTdWVvSGVuempvN2dfUXhUQ1VvaGJCdzlVX2dyNykiIGQ9Ik01NCwxMi42SDQyLjI2NCBjLTAuNzk4LTQuODc3LTUuMDMtOC42MTYtMTAuMTI5LTguNjE2UzIyLjgwNCw3LjcyMywyMi4wMDYsMTIuNkgxMC4yN2MtMC41NSwwLTEsMC40NS0xLDF2NDAuNDJjMCwwLjU1LDAuNDUsMSwxLDFIMzguMSBjOS4zMiwwLDE2LjktNy41OSwxNi45LTE2LjkxVjEzLjZDNTUsMTMuMDUsNTQuNTUsMTIuNiw1NCwxMi42eiBNMzIuMTM1LDUuOTg0YzQuMDI1LDAsNy4zODQsMi44OSw4LjEyMiw2LjcwMyBjLTIuNjAzLDAuMzY3LTUuNjE2LDEuOTA2LTguMTE3LDQuMTcyYy0yLjUxLTIuMjY2LTUuNTIzLTMuODA1LTguMTI2LTQuMTcyQzI0Ljc1MSw4Ljg3NSwyOC4xMSw1Ljk4NCwzMi4xMzUsNS45ODR6IE01MywzOC4xMSBjMCw4LjIyLTYuNjksMTQuOTEtMTQuOSwxNC45MUgxMS4yN1YxNC42aDExLjU5YzIuNTMsMCw1Ljk3LDEuNzQsOC41Nyw0LjM0YzAuMTksMC4yLDAuNDUsMC4zLDAuNzEsMC4zYzAuMjUsMCwwLjUxLTAuMSwwLjctMC4zIGMyLjYtMi42LDYuMDQtNC4zNCw4LjU3LTQuMzRINTNWMzguMTF6Ij48L3BhdGg+Cjwvc3ZnPg==" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/Blibli.com (1).png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container py-5 px-lg-5">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item d-flex flex-column text-center button" id="01">
+                            <img class="img-fluid w-100 " src="img/wizz_sausage_original.jpg">
+                            <div class="product-item label">
+                                Wizz Sausage - Original 250gr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item d-flex flex-column text-center button" id="02">
+                            <img class="img-fluid w-100 " src="img/wizz_sausage_cheese.jpg">
+                            <div class="product-item label">
+                                Wizz Sausage - Cheese 250gr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item d-flex flex-column text-center button" id="03">
+                            <img class="img-fluid w-100 " src="img/wizz_sausage_blackpepper.jpg">
+                            <div class="product-item label">
+                                Wizz Sausage - Blackpepper 250gr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item d-flex flex-column text-center button" id="04">
+                            <img class="img-fluid w-100 " src="img/wizz_sausage_basil.jpg">
+                            <div class="product-item label">
+                                Wizz Sausage - Basil 250gr
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Start -->
+            <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+                <div class="container py-5 px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-md-3 col-lg-4">
+                            <img class="img-fluid" src="img/logomeraki.png">
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="d-flex pt-2">
+                                <div class="d-flex flex-column" style="margin: auto; padding: auto;">
+                                    <div class="d-flex pt-2">
+                                        <div class="btn btn-outline-light btn-social"><img class="img-fluid rounded-circle" src="img/Logo jmkp.png"></div>
+                                        <div class="btn btn-outline-light btn-social"><img class="img-fluid rounded-circle" src="img/logo halal.jpeg"></div>
+                                    </div>
+                                    <div class="d-flex pt-2">
+                                        <a class="btn btn-outline-light btn-social"><img class="img-fluid rounded-circle" src="img/logo bnsp.png"></a>
+                                        <div class="btn btn-outline-light btn-social"><img class="img-fluid rounded-circle" src="img/logo gmp.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="galerry.html"><p class="section-title text-white h5 mb-4">Galeri<span></span></p></a>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                    <img class="img-fluid" src="img/galeri1.png" alt="Image">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="img/galeri2.png" alt="Image">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="img/galeri3.png" alt="Image">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="img/galeri4.png" alt="Image">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="img/galeri5.png" alt="Image">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="img/galeri6.png" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <p class="section-title text-white h5 mb-4">Alamat Pabrik<span></span></p>
+                            <p>
+                                Jl. Citanduy Blok D No. 6 Perum Pondok Cabe Indah,
+                                Cipayung, Tangerang Selatan 15418
+                            </p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/merakiciptarasa?igsh=YXlwbWttcTVrdm5y"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://api.whatsapp.com/send/?phone=6287773379369&text=Terima+kasih+telah+menghubungi+Meraki+Cipta+Rasa%2C+Mari+saya+bantu%21&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://youtube.com/merakiciptarasa?si=qiTrRYiRn02IbZ8y"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            <a class="border-bottom" href="#">Meraki Cipta Rasa</a>, All Right Reserved.
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/wow/wow.min.js"></script>
+    <script src="~/lib/easing/easing.min.js"></script>
+    <script src="~/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/lib/counterup/counterup.min.js"></script>
+    <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="~/lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="~/js/main.js"></script>
+</body>
+
+</html>
