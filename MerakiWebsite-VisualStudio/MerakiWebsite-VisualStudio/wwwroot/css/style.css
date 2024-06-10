@@ -56,6 +56,20 @@ h6,
     transition: .5s;
 }
 
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.btn-card {
+    background-color: white;
+    border-color: orange;
+}
+
 .btn:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
@@ -504,13 +518,13 @@ h6,
     border-color: var(--primary);
 }
 
-.portfolio-item img {
+/*.portfolio-item img {
     transition: .5s;
-}
+}*/
 
-.portfolio-item:hover img {
+/*.portfolio-item:hover img {
     transform: scale(1.1);
-}
+}*/
 
 .portfolio-item .portfolio-overlay {
     position: absolute;
