@@ -518,13 +518,13 @@ h6,
     border-color: var(--primary);
 }
 
-/*.portfolio-item img {
+.portfolio-item img {
     transition: .5s;
-}*/
+}
 
-/*.portfolio-item:hover img {
+.portfolio-item:hover img {
     transform: scale(1.1);
-}*/
+}
 
 .portfolio-item .portfolio-overlay {
     position: absolute;
