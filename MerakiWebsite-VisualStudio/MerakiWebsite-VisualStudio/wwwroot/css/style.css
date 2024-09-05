@@ -416,6 +416,7 @@ h6,
     transition: .5s;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    text-align: center;
 }
 .product-item:hover {
     cursor: pointer;
